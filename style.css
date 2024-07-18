@@ -1,0 +1,14 @@
+body {
+  display: flex;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+
+.operation {
+  display: flex;
+  flex-direction: column;
+}
