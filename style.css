@@ -1,14 +1,53 @@
 body {
   display: flex;
+  justify-content: center;
+  background-color: #34495E;
+  height: 100vh;
+  margin: 0;
 }
 
 .container {
-  display: flex;
-  flex-direction: row;
-  gap: 12px;
-}
-
-.operation {
+  border: solid #5f6370;
+  border-radius: 2px;
+  margin: auto;
+  width: 120px;
+  height: 160px;
   display: flex;
   flex-direction: column;
+}
+
+#display {
+  border: solid rgb(53, 56, 72);
+  text-align: end;
+  padding: 2px;
+  padding-right: 4px;
+  color: #D5E1DD;
+}
+
+.firstRow, .secondRow, .thirdRow, .fourthRow, .fifthRow {
+  display: flex;
+  flex-grow: 1
+}
+button {
+  flex: 1;
+  border-radius: 2px;
+  border-width: 0;
+  margin: .6px
+}
+
+button#zero {
+  flex-grow: 2;
+}
+
+button.number {
+  background-color: #77bed2;
+}
+
+button.op {
+  background-color: #F2583E;
+}
+
+button.func {
+  background-color: #D5E1DD;
+  border-color: #D5E1DD;
 }
